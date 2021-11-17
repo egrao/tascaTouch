@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public boolean onDown(MotionEvent event) {
-        Log.d(DEBUG_TAG,"onDown: " + event.toString());
+        Log.d(DEBUG_TAG,"onDown: " + "onDown ");
         Toast.makeText(MainActivity.this, "down", Toast.LENGTH_SHORT).show();
         return true;
     }
@@ -48,52 +48,52 @@ public class MainActivity extends Activity implements
     @Override
     public boolean onFling(MotionEvent event1, MotionEvent event2,
                            float velocityX, float velocityY) {
-        Log.d(DEBUG_TAG, "onFling: " + event1.toString() + event2.toString());
+        Log.d(DEBUG_TAG, "onFling: " + "onFling ");
         Toast.makeText(MainActivity.this, "fling", Toast.LENGTH_SHORT).show();
         return true;
     }
 
     @Override
     public void onLongPress(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+        Log.d(DEBUG_TAG, "onLongPress: " + "onLongPress ");
         Toast.makeText(MainActivity.this, "LongPress", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public boolean onScroll(MotionEvent event1, MotionEvent event2, float distanceX,
                             float distanceY) {
-        Log.d(DEBUG_TAG, "onScroll: " + event1.toString() + event2.toString());
+        Log.d(DEBUG_TAG, "onScroll: " + "onScroll");
         Toast.makeText(MainActivity.this, "Scroll", Toast.LENGTH_SHORT).show();
         return true;
     }
 
     @Override
     public void onShowPress(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onShowPress: " + event.toString());
+        Log.d(DEBUG_TAG, "onShowPress: " + "onShowPress ");
     }
 
     @Override
     public boolean onSingleTapUp(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onSingleTapUp: " + event.toString());
+        Log.d(DEBUG_TAG, "onSingleTapUp: " + "onSingleTapUp");
         return true;
     }
 
     @Override
     public boolean onDoubleTap(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onDoubleTap: " + event.toString());
+        Log.d(DEBUG_TAG, "onDoubleTap: " + "onDoubleTap");
         Toast.makeText(MainActivity.this, "doubleTap", Toast.LENGTH_SHORT).show();
         return true;
     }
 
     @Override
     public boolean onDoubleTapEvent(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onDoubleTapEvent: " + event.toString());
+        Log.d(DEBUG_TAG, "onDoubleTapEvent: " + "onDoubleTapEvent ");
         return true;
     }
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent event) {
-        Log.d(DEBUG_TAG, "onSingleTapConfirmed: " + event.toString());
+        Log.d(DEBUG_TAG, "onSingleTapConfirmed: " + "onSingleTapConfirmed ");
         return true;
     }
 }
